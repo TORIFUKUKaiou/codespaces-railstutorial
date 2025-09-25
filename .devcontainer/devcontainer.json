@@ -29,17 +29,10 @@
   //"onCreateCommand": "gem install solargraph -v '0.50.0' -N && gem install ruby-lsp -N",
   //"onCreateCommand": "gem install ruby-lsp -N",
   //# => Solargraph gem not found. Run `gem install solargraph` or update your Gemfile.
-  "updateContentCommand": "bundle install",
+  "updateContentCommand": "",
   "postCreateCommand": "",
-  "postAttachCommand": {
-    "server": "rails server"
-  },
+  "postAttachCommand": "",
   "customizations": {
-    "codespaces": {
-      "openFiles": [
-        "app/views/hello/index.html.erb"
-      ]
-    },
     "vscode": {
       "extensions": [
         "GitHub.codespaces",
