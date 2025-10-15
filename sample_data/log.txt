@@ -1,0 +1,35 @@
+[2025-01-15 10:23:45] INFO: Server started on port 3000
+[2025-01-15 10:24:01] INFO: User login: user_id=1, name=山田太郎
+[2025-01-15 10:24:15] INFO: GET /users/1 200 OK
+[2025-01-15 10:25:32] ERROR: undefined method 'name' for nil:NilClass
+[2025-01-15 10:25:32] ERROR: Location: app/controllers/users_controller.rb:23
+[2025-01-15 10:26:10] INFO: User login: user_id=2, name=佐藤花子
+[2025-01-15 10:27:45] INFO: POST /posts 201 Created
+[2025-01-15 10:28:03] WARN: Slow query detected: 1.2s
+[2025-01-15 10:29:17] INFO: GET /posts/5 200 OK
+[2025-01-15 10:30:22] ERROR: ActiveRecord::RecordNotFound
+[2025-01-15 10:30:22] ERROR: Couldn't find User with 'id'=999
+[2025-01-15 10:31:05] INFO: User logout: user_id=1
+[2025-01-15 10:32:18] INFO: GET /about 200 OK
+[2025-01-15 10:33:44] INFO: User login: user_id=3, name=鈴木一郎
+[2025-01-15 10:35:12] ERROR: Connection timeout
+[2025-01-15 10:35:12] ERROR: Failed to connect to database
+[2025-01-15 10:36:27] INFO: Database reconnected successfully
+[2025-01-15 10:37:50] INFO: GET /users 200 OK
+[2025-01-15 10:38:33] INFO: User logout: user_id=2
+[2025-01-15 10:40:15] WARN: Memory usage: 85%
+[2025-01-16 09:15:22] INFO: Server started on port 3000
+[2025-01-16 09:16:05] INFO: User login: user_id=1, name=山田太郎
+[2025-01-16 09:17:33] INFO: GET /dashboard 200 OK
+[2025-01-16 09:18:44] ERROR: Validation failed: Email can't be blank
+[2025-01-16 09:19:12] INFO: POST /users 422 Unprocessable Entity
+[2025-01-16 09:20:55] INFO: User logout: user_id=1
+[2025-01-16 09:22:10] INFO: GET / 200 OK
+[2025-01-16 09:23:47] WARN: Deprecated method called: User.find_by_name
+[2025-01-16 09:25:03] INFO: User login: user_id=4, name=田中美咲
+[2025-01-16 09:26:28] ERROR: NoMethodError: undefined method 'email' for nil
+[2025-01-16 09:26:28] ERROR: Location: app/views/users/show.html.erb:15
+[2025-01-16 09:27:41] INFO: GET /posts 200 OK
+[2025-01-16 09:29:05] INFO: User logout: user_id=4
+[2025-01-16 09:30:22] INFO: Server shutdown requested
+[2025-01-16 09:30:23] INFO: Shutting down gracefully...
